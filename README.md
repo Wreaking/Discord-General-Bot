@@ -14,8 +14,9 @@ This project is own by Wreaking#5515, based on discord general bot. Please consi
 • Never remove credits
 
 **__Before starting please follow the steps__**
+> You must get kawaai API for some specific commands
 > Go to https://discord.com/developers/docs/intro
-> Make a new application name your bot example= NeoBot's AI chatbot. See the screenshot --> [Screenshot](https://im4.ezgif.com/tmp/ezgif-4-fa40e0b56a4f.png)
+> Make a new application name your bot example= NeoBot's xdbot. See the screenshot --> [Screenshot](https://im4.ezgif.com/tmp/ezgif-4-fa40e0b56a4f.png)
 > At the left you will find something called Bot with a puzzle emoji, please click it.
 > Click on Add Bot. [Screenshot](https://im4.ezgif.com/tmp/ezgif-4-99b352150c3d.png)
 > After that, click on token in order to copy the token
@@ -34,7 +35,7 @@ __IF YOU ARE USING GLITCH.COM__
 > Make new project shown in the right side top of your screen [Screenshot](https://im4.ezgif.com/tmp/ezgif-4-7e1d397c2e71.png)
 > It gives you 5 options, click on 2 option. [Screenshot](https://im4.ezgif.com/tmp/ezgif-4-7e1d397c2e71.png)
 > after creating it click on tool is shown on the left cornor of your screen. [Screenshot](https://im4.ezgif.com/tmp/ezgif-4-bcadfa4606ce.png)
-> Click on import and export and then click on import and paste __Wreaking/PublicChatbot__. [Screenshot1](https://im4.ezgif.com/tmp/ezgif-4-56b4a1d51bab.png)
+> Click on import and export and then click on import and paste __Wreaking/Discord-General-Bot__. [Screenshot1](https://im4.ezgif.com/tmp/ezgif-4-56b4a1d51bab.png)
 and [Screenshot2](https://im4.ezgif.com/tmp/ezgif-4-90e4d97b7cca.png)
 > After importing it, make a .env file or the file will be exist and write TOKEN in the key box and paste your token in value box. [Screenshot](https://im4.ezgif.com/tmp/ezgif-4-9e8c0ae9d45f.png)
 now your discord bot is online. . .
