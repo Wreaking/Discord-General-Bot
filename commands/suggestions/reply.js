@@ -85,3 +85,5 @@ if (channel === null) return;
     }
   }
 }
+// CREATED BY WREAKING#5515
+//IF YOU ARE USING IT PLEASE MENTION MY NAME OR MY BOTS NAME

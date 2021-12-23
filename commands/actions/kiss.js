@@ -7,7 +7,7 @@ module.exports = {
                     let tempmsg = await message.channel.send(new MessageEmbed().setColor('#00298c').setAuthor("Loading...", "https://cdn.discordapp.com/emojis/769935094285860894.gif"))
               tempmsg.delete(); 
 const user = message.mentions.users.first() || client.users.cache.get(args[0]) || message.author;
-          const tokena = "PASTE UR OWN TOKEN";
+          const tokena = "";
       
 axios.get(`https://kawaii.red/api/gif/kiss/token=${tokena}/`).then(res => {
     const Embed = new Discord.MessageEmbed()
@@ -25,3 +25,5 @@ axios.get(`https://kawaii.red/api/gif/kiss/token=${tokena}/`).then(res => {
        })
     }
 };
+// CREATED BY WREAKING#5515
+//IF YOU ARE USING IT PLEASE MENTION MY NAME OR MY BOTS NAME

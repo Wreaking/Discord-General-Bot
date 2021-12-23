@@ -96,3 +96,5 @@ const cross = client.emojis.cache.find(x => x.name === "Neo_Cross")
   }
 }
 }
+// CREATED BY WREAKING#5515
+//IF YOU ARE USING IT PLEASE MENTION MY NAME OR MY BOTS NAME

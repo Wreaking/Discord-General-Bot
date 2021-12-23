@@ -4,8 +4,8 @@ const { MessageEmbed, Collection, Client } = require ('discord.js')
   const keepAlive = require('./server.js')
 keepAlive()
   require('discord-reply');
-  const prefix = 'e!'
-// Request the Discord Client
+  const prefix = 'e!'//CHANGE YOUR PREFIX IF YOU WANT
+
 require("dotenv").config();
 const client = new Client({
 	disableMentions: 'everyone'
@@ -21,16 +21,19 @@ client.aliases = new Collection();
 const fs = require("fs");
 const { readdirSync } = require("fs");
 const { join } = require("path");
-// Login the discord bot using Discord Client
+
 
 client.on('ready', () => {
   console.log(`https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`);
 });
 // Log the startup + make a status
-client.on("ready", async => {
-    // Log that the bot started
-    console.log(`Bot started (Made by Wreaking (don't steal my credits))`)
-})
+client.on('ready', () => {
+	console.log(`[INFO]: Ready on client (${client.user.tag})`);
+	console.log('-------------------------------------');
+	client.user.setActivity(`Powered By NeoBot |  ${client.users.cache.size} users`, {
+		    type: 'WATCHING'
+	});
+}); //YOUR BOT'S STATUS
 
 //WHEN SOMEONE MESSAGE
 client.on('message', async message => {
@@ -53,6 +56,7 @@ client.on('message', async message => {
 	if (command) command.run(client, message, args, db);
 });
 // Create the antiswear message event
+//SCAM LINK DETECTOR
 client.on("message", async (message, guild, channel, member) => {
   
   const { MessageEmbed } = require ('discord.js')
@@ -91,11 +95,12 @@ const noWords = JSON.parse(fs.readFileSync("./words/blockedlinks.json"));
     }
  
 })
+//ANTI SWEAR DETECTORS
 client.on("message", async (message, guild, channel, member) => {
   
   const { MessageEmbed } = require ('discord.js')
   const db = require ('quick.db')
- const check = client.emojis.cache.find(x => x.name === "Neo_Warning")
+
 
     let antilink = db.get(`swear_${message.guild.id}`)
     if(antilink === "disabled"|| antilink === null) return;
@@ -200,39 +205,12 @@ client.on("message", message => {
 });
 
 
-//=============================================
-const channel_id = ""//PLEASE PASTE CHANNEL ID IF YOU DON'T KNOW HOW TO GET CHANNEL ID ENABLE DEVELOPER MODE ON OR JOIN OUR SERVER
-//=============================================
-client.on('ready', () => {
-	console.log(`[INFO]: Ready on client (${client.user.tag})`);
-	console.log('-------------------------------------');
-	client.user.setActivity(`Powered By NeoBot |  ${client.users.cache.size} users`, {
-		    type: 'WATCHING'
-	});
-});
-
-client.on('message', async (message) => {
-  if (!message.guild) return;
-  if (message.author.bot) return;
-  message.content = message.content.replace(/@(everyone)/gi, "everyone").replace(/@(here)/gi, "here");
-if (message.content.includes(`@`)) {
-return message.lineReply(`**:x: Please dont mention anyone**`);
- }
-   
-   try {
-  if (message.channel.id != channel_id) return
-  let res = await axios.get(`http://api.brainshop.ai/get?bid=159454&key=RKi4jqvbEarRLLq2&uid=[uid]&msg=[msg]=${encodeURIComponent(message.content)}`);
-  message.reply({
-    embed:{
-      title: "AI ChatBot", //you can remove if you want 
-      description:res.data.cnt, //don't remove this
-      color: '#cc0000',
-    }
-    });
-  } catch {
-   errorEmbed(`Bot error, please try again!`,message)
-   }
-})
 
 
-client.login(process.env.TOKEN)
+
+
+
+client.login(process.env.TOKEN)// LOGIN BY PUTTING YOUR TOKEN IN ENVIROMENTAL VARIABLES AND NEVER SHARE YOUR BOTS INFORMATION
+
+// CREATED BY WREAKING#5515
+//IF YOU ARE USING IT PLEASE MENTION MY NAME OR THE BOTS NAME

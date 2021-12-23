@@ -25,3 +25,5 @@ axios.get(`https://kawaii.red/api/gif/peek/token=${tokena}/`).then(res => {
        })
     }
 };
+// CREATED BY WREAKING#5515
+//IF YOU ARE USING IT PLEASE MENTION MY NAME OR MY BOTS NAME

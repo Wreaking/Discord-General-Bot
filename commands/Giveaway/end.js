@@ -17,9 +17,7 @@ module.exports = {
         if(!args[0]) return message.reply("You need to specify the message ID!")
 
         let giveaway = 
-        // sdfds
         client.giveawaysManager.giveaways.find((g) => g.prize === args.join(' ')) ||
-        // sdfsd
         client.giveawaysManager.giveaways.find((g) => g.messageID === args[0]);
 
         if(!giveaway){
@@ -28,7 +26,7 @@ module.exports = {
         client.giveawaysManager.edit(giveaway.messageID, {
             setEndTimestamp: Date.now()
         })
-        // sfsd againb XDDDDD
+      
         .then(() => {
             message.channel.send('Giveaway will end in less than '+(client.giveawaysManager.options.updateCountdownEvery/1000)+' seconds...');
         })
@@ -36,10 +34,11 @@ module.exports = {
             if(e.startsWith(`Giveaway with message ID ${giveaway.messageID} is already ended.`)){
                 message.channel.send('This giveaway is already ended!');
             } else {
-                // console.error(e);
             message.channel.send('An error occured...');
             }
         })
             
     }
 }
+// CREATED BY WREAKING#5515
+//IF YOU ARE USING IT PLEASE MENTION MY NAME OR MY BOTS NAME
