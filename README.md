@@ -12,7 +12,17 @@ This project is own by Wreaking#5515, based on discord general bot. Please consi
 • Stealing codes
 
 • Never remove credits
-
+# Important
+Make file called config.json and copy this
+```json
+{
+     "everyoneMention": false,
+    "hostedBy": true,
+      "approveemoji": "✅",
+  "denyemoji": "🚫",
+  "erroremoji": "️❗"
+}
+```
 **__Before starting please follow the steps__**
 > You must get kawaai API for some specific commands
 > Go to https://discord.com/developers/docs/intro
