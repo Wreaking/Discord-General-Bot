@@ -30,7 +30,7 @@ category: "help",
         //Sort your commands into categories, and make seperate embeds for each category
         const listofcommands = new Discord.MessageEmbed()
         .setTitle('LIST OF COMMANDS')
-          .setDescription("Hey! This is an another general bot consist of fun and automod commands. You can get this type of bot by joining our [supportiveserver]() \n My prefix is `e!` \n You can mention me if you forgot my prefix```yaml\nHere are the commands:```")
+          .setDescription("Hey! This is an another general bot consist of fun and automod commands. You can get this type of bot by joining our [supportiveserver](https://discord.gg/3hMK4bVxt5) \n My prefix is `e!` \n You can mention me if you forgot my prefix```yaml\nHere are the commands:```")
         .setColor("#00298c")
 .addFields(
   {name:'Actions', value:'e!help-actions', inline:true},
