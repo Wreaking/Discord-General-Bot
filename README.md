@@ -1,19 +1,16 @@
-This project is own by Wreaking#6969, based on discord general bot. Please consider to star my project and fork it if you want :p. This source code is for my members in my server. It was released in 25th december.
-
 ### Things To do
 • Fork it
 
-• Join our server[Clickme](https://discord.gg/Z7JXdVbE2J)
+• Join our server[ Clickme](https://discord.gg/Z7JXdVbE2J)
 
 • Star the project
 
-• Must invite my bot lol [invite](https://discord.com/api/oauth2/authorize?client_id=952093567856304139&permissions=8&scope=bot%20applications.commands)
 ### Things that should not have to do
 • Stealing codes
 
 • Never remove credits
 # Important
-Make file called config.json and copy and paste this
+Make a file called config.json and copy and paste this
 ```json
 {
      "everyoneMention": false,
@@ -30,7 +27,7 @@ Make file called config.json and copy and paste this
 
 > Make a new application name your bot example= NeoBot's xdbot.
 
-> At the left you will find something called Bot with a puzzle emoji, please click it.
+> At the left you will find something called Bot with a puzzle emoji, click it.
 
 > Click on Add Bot.
 
